@@ -50,7 +50,7 @@ export const CAPABILITIES_AREAS: CapabilityArea[] = [
       {
         id: 'c-2',
         name: 'Organización de procesos y tareas',
-        solutionOutcome: 'Mapeo y simplificación de las rutinas de trabajo para evitar duplicidades, despistes y cuellos de botella.',
+        solutionOutcome: 'Mapeo y simplificación de las rutinas de trabajo para evitar duplicidades, despistes y fricciones operativas.',
       },
       {
         id: 'c-3',
@@ -210,7 +210,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onSele
 
             <div className="shrink-0 flex items-center gap-2 text-xs font-semibold text-stone-300 bg-white/[0.04] px-4 py-2.5 rounded-xl border border-white/10">
               <Target className="w-4 h-4 text-cyan-400" />
-              <span>Enfoque Resolutivo B2B</span>
+              <span>Enfoque Resolutivo especialista en gestión, organización y desarrollo de oportunidades de negociol</span>
             </div>
           </div>
         </div>

@@ -342,7 +342,7 @@ export const EmploymentEvaluator: React.FC<EmploymentEvaluatorProps> = ({
               Filtrado Inteligente de Puestos Administrativos & Sector Público
             </h2>
             <p className="text-xs sm:text-sm text-stone-300 leading-relaxed font-normal">
-              <strong>Separación de objetivos:</strong> El fin primordial de Palmira AI es captar clientes independientes, retainers B2B y proyectos para ERIA HOUSE. Este módulo secundario localiza con estricto rigor únicamente vacantes <strong>administrativas</strong> con <strong>prioridad turno de mañana</strong> en Administraciones Públicas y empresas privadas en Illescas, Toledo y sur de Madrid.
+              <strong>Separación de objetivos:</strong> El fin primordial de Palmira AI es captar clientes independientes, retainers especialista en gestión, organización y desarrollo de oportunidades de negociol y proyectos para Gestión Inmobiliaria Propia. Este módulo secundario localiza con estricto rigor únicamente vacantes <strong>administrativas</strong> con <strong>prioridad turno de mañana</strong> en Administraciones Públicas y empresas privadas en Illescas, Toledo y sur de Madrid.
             </p>
           </div>
 

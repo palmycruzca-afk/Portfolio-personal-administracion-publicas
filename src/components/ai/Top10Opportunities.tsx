@@ -78,7 +78,7 @@ export const Top10Opportunities: React.FC<Top10OpportunitiesProps> = ({
                 : 'text-stone-400 hover:text-white hover:bg-white/[0.04]'
             }`}
           >
-            A. Captación B2B
+            A. Captación especialista en gestión, organización y desarrollo de oportunidades de negociol
           </button>
           <button
             type="button"

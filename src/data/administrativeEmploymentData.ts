@@ -456,7 +456,7 @@ export const PRIVATE_ADMIN_OPPORTUNITIES: AdministrativeEmploymentData[] = [
     totalFitScore: 98,
     isRecommended: true,
     fitReasons: [
-      'Máxima sintonía con la experiencia de Palmira en ERIA HOUSE en preparación de carpetas notariales y registros.',
+      'Máxima sintonía con la experiencia de Palmira en Gestión Inmobiliaria Propia en preparación de carpetas notariales y registros.',
       'Jornada matinal continuada de 08:30 a 15:00.',
       'Retribución competitiva para el sector de gestión jurídica en Toledo.'
     ],
@@ -465,8 +465,8 @@ export const PRIVATE_ADMIN_OPPORTUNITIES: AdministrativeEmploymentData[] = [
   {
     sectorType: 'empresa_privada',
     roleTitle: 'Coordinadora Administrativa de Oficina y Facturación a Clientes',
-    entityName: 'Parque Empresarial y Tecnológico Madrid Sur',
-    location: 'Getafe (Madrid Sur) — Parque Empresarial La Carpetania',
+    entityName: 'Parque especialista en gestión, organización y desarrollo de oportunidades de negociol y Tecnológico Madrid Sur',
+    location: 'Getafe (Madrid Sur) — Parque especialista en gestión, organización y desarrollo de oportunidades de negociol La Carpetania',
     distanceKm: 22,
     scheduleType: 'flexible_manana',
     scheduleDetails: 'Lunes a Viernes de 08:00 a 15:30 (con 2 días semanales de teletrabajo)',
@@ -503,7 +503,7 @@ export const PRIVATE_ADMIN_OPPORTUNITIES: AdministrativeEmploymentData[] = [
   {
     sectorType: 'empresa_privada',
     roleTitle: 'Auxiliar Administrativa de Gestión de Clientes y Cobros',
-    entityName: 'Grupo Asesor y Gestoría Empresarial Toledo',
+    entityName: 'Grupo Asesor y Gestoría especialista en gestión, organización y desarrollo de oportunidades de negociol Toledo',
     location: 'Toledo Polígono Industrial',
     distanceKm: 27,
     scheduleType: 'sin_confirmar',

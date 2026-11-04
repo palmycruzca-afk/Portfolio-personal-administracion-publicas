@@ -178,7 +178,7 @@ export default function App() {
                 setCurrentView('ai');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              onContactClick={() => scrollToContact('Colaboración ERIA HOUSE')}
+              onContactClick={() => scrollToContact('Colaboración en Gestión y Negocio Inmobiliario')}
             />
 
             <ContactSection preselectedService={contactServicePrefill} />

@@ -50,7 +50,7 @@ export const PublicFooter: React.FC<PublicFooterProps> = ({ onOpenAi }) => {
                 Iniciativas
               </div>
               <ul className="space-y-2.5 text-stone-400">
-                <li><a href="#proyectos" className="hover:text-white transition-colors">ERIA HOUSE</a></li>
+                <li><a href="#proyectos" className="hover:text-white transition-colors">Gestión Inmobiliaria Propia</a></li>
                 <li>
                   <button 
                     type="button" 
@@ -61,7 +61,7 @@ export const PublicFooter: React.FC<PublicFooterProps> = ({ onOpenAi }) => {
                     <Sparkles className="w-3 h-3 text-cyan-400" />
                   </button>
                 </li>
-                <li><a href="#contacto" className="hover:text-white transition-colors">Contacto B2B</a></li>
+                <li><a href="#contacto" className="hover:text-white transition-colors">Contacto especialista en gestión, organización y desarrollo de oportunidades de negociol</a></li>
               </ul>
             </div>
           </div>

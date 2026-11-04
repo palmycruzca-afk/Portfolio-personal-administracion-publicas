@@ -20,7 +20,7 @@ export const OpportunityScoreBreakdown: React.FC<OpportunityScoreBreakdownProps>
       weight: '25%',
       factorValue: scores.fit,
       weighted: (scores.fit * 0.25).toFixed(1),
-      description: 'Afinidad directa con la experiencia previa en SEAT, sector infantil, retail y ERIA HOUSE.',
+      description: 'Afinidad directa con la experiencia previa en SEAT, sector infantil, retail y Gestión Inmobiliaria Propia.',
     },
     {
       key: 'profitability',
@@ -44,7 +44,7 @@ export const OpportunityScoreBreakdown: React.FC<OpportunityScoreBreakdownProps>
       weight: '15%',
       factorValue: scores.costsTime,
       weighted: (scores.costsTime * 0.15).toFixed(1),
-      description: 'Compatibilidad de la dedicación horaria semanal con la gestión de ERIA HOUSE y calidad de vida.',
+      description: 'Compatibilidad de la dedicación horaria semanal con la gestión de Gestión Inmobiliaria Propia y calidad de vida.',
     },
     {
       key: 'locationScore',

@@ -185,7 +185,7 @@ export const AiDashboard: React.FC<AiDashboardProps> = ({
               <Layers className="w-4 h-4 text-cyan-400" />
               <span>Distribución por Categorías Comerciales</span>
             </h3>
-            <span className="text-xs text-stone-400 font-mono">Prioridad B2B</span>
+            <span className="text-xs text-stone-400 font-mono">Prioridad especialista en gestión, organización y desarrollo de oportunidades de negociol</span>
           </div>
 
           <div className="space-y-4">
@@ -276,7 +276,7 @@ export const AiDashboard: React.FC<AiDashboardProps> = ({
                   <span className="text-[10px] font-mono text-cyan-300 font-bold">Índice: 89/100</span>
                 </div>
                 <p className="text-xs text-stone-300 mt-1 line-clamp-1 font-normal">
-                  En negociación. Enviar protocolo documental ERIA HOUSE como referencia a Elena Moraleda.
+                  En negociación. Enviar protocolo documental Gestión Inmobiliaria Propia como referencia a Elena Moraleda.
                 </p>
               </div>
 

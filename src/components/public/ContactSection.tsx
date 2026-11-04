@@ -262,7 +262,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ preselectedServi
                       <option value="Organización de procesos" className="bg-slate-900 text-white">Organización de procesos</option>
                       <option value="Coordinación de personal y turnos" className="bg-slate-900 text-white">Coordinación de personal y turnos</option>
                       <option value="Atención y seguimiento de clientes" className="bg-slate-900 text-white">Atención y seguimiento de clientes</option>
-                      <option value="Colaboración inmobiliaria (ERIA HOUSE)" className="bg-slate-900 text-white">Colaboración inmobiliaria (ERIA HOUSE)</option>
+                      <option value="Colaboración inmobiliaria (Gestión Inmobiliaria Propia)" className="bg-slate-900 text-white">Colaboración inmobiliaria (Gestión Inmobiliaria Propia)</option>
                       <option value="Propuesta personalizada a medida" className="bg-slate-900 text-white">Propuesta personalizada a medida</option>
                     </select>
                   </div>

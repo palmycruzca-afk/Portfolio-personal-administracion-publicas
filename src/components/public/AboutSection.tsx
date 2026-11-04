@@ -39,7 +39,7 @@ export const AboutSection: React.FC = () => {
             </p>
 
             <p>
-              Como profesional independiente y empresaria al frente de <strong>ERIA HOUSE</strong>, conozco en primera persona la exigencia de coordinar operaciones complejas, negociar acuerdos, cuidar la atención al cliente y resolver trámites críticos sin margen para el error.
+              Como profesional independiente y especialista en gestión, organización y desarrollo de oportunidades de negocio con amplia trayectoria directiva en la gestión de negocios y el sector inmobiliario, conozco en primera persona la exigencia de coordinar operaciones complejas, negociar acuerdos, cuidar la atención al cliente y resolver trámites críticos sin margen para el error.
             </p>
 
             {/* Quote Card */}

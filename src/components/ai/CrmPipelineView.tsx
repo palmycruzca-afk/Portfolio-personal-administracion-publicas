@@ -61,7 +61,7 @@ export const CrmPipelineView: React.FC<CrmPipelineViewProps> = ({
         <div>
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-violet-400 mb-1">
             <KanbanSquare className="w-4 h-4 text-cyan-400" />
-            <span>Embudo Comercial & Pipeline B2B</span>
+            <span>Embudo Comercial & Pipeline especialista en gestión, organización y desarrollo de oportunidades de negociol</span>
           </div>
           <h2 className="text-3xl font-extrabold text-white tracking-tight">
             CRM Comercial de Prospección

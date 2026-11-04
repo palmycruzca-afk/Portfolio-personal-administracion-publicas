@@ -1,7 +1,7 @@
 
 export type OpportunityCategory = 
-  | 'captacion'         // A. Captación de clientes (B2B Retainers)
-  | 'colaboraciones'     // B. Colaboraciones (Inmobiliaria / Despachos / ERIA HOUSE)
+  | 'captacion'         // A. Captación de clientes (especialista en gestión, organización y desarrollo de oportunidades de negociol Retainers)
+  | 'colaboraciones'     // B. Colaboraciones (Inmobiliaria / Despachos / Gestión Inmobiliaria Propia)
   | 'licitaciones'       // C. Proyectos y licitaciones de servicios
   | 'empleo';            // D. Módulo de Empleo Administrativo
 

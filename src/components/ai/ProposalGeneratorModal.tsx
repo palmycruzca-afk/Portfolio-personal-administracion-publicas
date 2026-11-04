@@ -45,7 +45,7 @@ export const ProposalGeneratorModal: React.FC<ProposalGeneratorModalProps> = ({
 
   const documentOptions = [
     { id: 'propuesta_colaboracion', label: 'Propuesta de colaboración' },
-    { id: 'primer_contacto', label: 'Mensaje de primer contacto (Email / B2B)' },
+    { id: 'primer_contacto', label: 'Mensaje de primer contacto (Email / especialista en gestión, organización y desarrollo de oportunidades de negociol)' },
     { id: 'presupuesto_orientativo', label: 'Presupuesto orientativo desglosado' },
     { id: 'presentacion_comercial', label: 'Presentación ejecutiva de capacidades' },
     { id: 'correo_seguimiento', label: 'Correo personalizado de seguimiento' },

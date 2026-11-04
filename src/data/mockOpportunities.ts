@@ -15,9 +15,9 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
   {
     id: 'opp-1',
     isTop10: true,
-    company: 'Centro Empresarial Iberum Illescas',
+    company: 'Centro especialista en gestión, organización y desarrollo de oportunidades de negociol Iberum Illescas',
     title: 'Soporte Administrativo Externo y Coordinación Documental de Facturación',
-    sector: 'Servicios Empresariales & Administración',
+    sector: 'Servicios especialista en gestión, organización y desarrollo de oportunidades de negocioles & Administración',
     category: 'captacion',
     location: 'Plataforma Central Iberum, Illescas (Toledo)',
     distanceKm: 4,
@@ -31,8 +31,8 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
       continuity: 92,   // 5%  -> 4.6
     },
     opportunityIndex: 90, // (23.5 + 22.5 + 16.0 + 13.2 + 9.8 + 4.6 = 89.6 => 90)
-    justification: 'Ubicación inmediata en Illescas. Gran volumen de albaranes, CMRs y control de flotas con picos de trabajo. El perfil administrativo riguroso y metódico encaja perfectamente para desatascar la oficina de tráfico.',
-    source: 'Registro Empresarial La Sagra & Oferta de soporte auxiliar B2B',
+    justification: 'Ubicación inmediata en Illescas. Gran volumen de albaranes, CMRs y control de flotas con picos de trabajo. El perfil administrativo riguroso y metódico encaja perfectamente para optimizar la gestión de tráfico.',
+    source: 'Registro especialista en gestión, organización y desarrollo de oportunidades de negociol La Sagra & Oferta de soporte auxiliar especialista en gestión, organización y desarrollo de oportunidades de negociol',
     sourceDate: '28 de Octubre de 2026',
     description: 'Empresa logística en expansión que precisa externalizar la validación administrativa de albaranes, comprobación de incidencias de transporte y archivo de documentación de vehículos y conductores.',
     businessActivity: 'Gestión de cross-docking y distribución de mercancías en el eje Madrid-Toledo.',
@@ -82,7 +82,7 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
     contactPerson: {
       name: 'Marcos Ruiz',
       role: 'Director de Operaciones & Logística',
-      channel: 'LinkedIn B2B / Correo corporativo'
+      channel: 'LinkedIn especialista en gestión, organización y desarrollo de oportunidades de negociol / Correo corporativo'
     }
   },
   {
@@ -104,7 +104,7 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
       continuity: 90,
     },
     opportunityIndex: 89,
-    justification: 'Máxima afinidad con ERIA HOUSE. La agencia busca un colaborador senior de confianza que prepare carpetas notariales, filtre clientes compradores solventes y coordine firmas sin añadir nómina fija.',
+    justification: 'Máxima afinidad con Gestión Inmobiliaria Propia. La agencia busca un colaborador senior de confianza que prepare carpetas notariales, filtre clientes compradores solventes y coordine firmas sin añadir nómina fija.',
     source: 'Colegio de Agentes Inmobiliarios & Red profesional',
     sourceDate: '25 de Octubre de 2026',
     description: 'Agencia inmobiliaria consolidada en Toledo especializada en inmuebles singulares y residencial medio-alto que sufre saturación en la gestión burocrática previa a la firma en notaría.',
@@ -117,13 +117,13 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
       'Gestión documental'
     ],
     fitReasons: [
-      'Conocimiento integral del ciclo inmobiliario adquirido directamente en ERIA HOUSE.',
+      'Conocimiento integral del ciclo inmobiliario adquirido directamente en Gestión Inmobiliaria Propia.',
       'Lenguaje común con notarios, registradores y entidades financieras.',
       'Trato exquisito y empático con clientes en momentos de alta tensión emocional de compra/venta.'
     ],
     advantages: [
       'Modelo híbrido: tarifa fija por expediente completado + retainer mensual de supervisión.',
-      'Relación de mutua prescripción de compradores e inmuebles con ERIA HOUSE.'
+      'Relación de mutua prescripción de compradores e inmuebles con Gestión Inmobiliaria Propia.'
     ],
     risks: [
       'Dependencia de la agilidad del registro de la propiedad de Toledo en ciertas fincas históricas.'
@@ -133,7 +133,7 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
     ],
     nextSteps: [
       'Reunión personal con la socia fundadora (Dña. Elena Moraleda).',
-      'Presentar protocolo de checklist documental ERIA HOUSE como ejemplo de buenas prácticas.'
+      'Presentar protocolo de checklist documental Gestión Inmobiliaria Propia como ejemplo de buenas prácticas.'
     ],
     crmStatus: 'en_negociacion',
     notes: [
@@ -292,7 +292,7 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
     id: 'opp-5',
     isTop10: true,
     company: 'Distribuidora de Componentes Industriales Sur',
-    title: 'Estandarización de Facturación, Reclamación de Pagos y Atención a Clientes B2B',
+    title: 'Estandarización de Facturación, Reclamación de Pagos y Atención a Clientes especialista en gestión, organización y desarrollo de oportunidades de negociol',
     sector: 'Comercio Industrial y Mayorista',
     category: 'captacion',
     location: 'Parla / Pinto (Sur de Madrid)',
@@ -311,7 +311,7 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
     source: 'Directorio Industrial Comunidad de Madrid & Análisis web',
     sourceDate: '26 de Octubre de 2026',
     description: 'Mayorista de suministros para talleres mecánicos e industria pesada. Cuentan con 18 comerciales en ruta y carecen de un enlace que organice los pedidos especiales y reclame los pagarés pendientes.',
-    businessActivity: 'Distribución B2B de repuestos, valvulería y herramienta industrial.',
+    businessActivity: 'Distribución especialista en gestión, organización y desarrollo de oportunidades de negociol de repuestos, valvulería y herramienta industrial.',
     identifiedNeed: 'Periodo medio de cobro disparado a 85 días por falta de seguimiento telefónico sistemático y amable a clientes morosos.',
     servicesOffered: [
       'Atención y seguimiento de clientes',
@@ -388,7 +388,7 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
       'Hábito de coordinar profesionales de distintos perfiles técnicos.'
     ],
     advantages: [
-      'Sinergias directas con ERIA HOUSE: posibles colaboraciones en proyectos de clientes particulares.',
+      'Sinergias directas con Gestión Inmobiliaria Propia: posibles colaboraciones en proyectos de clientes particulares.',
       'Flexibilidad y cercanía absoluta.'
     ],
     risks: [
@@ -398,7 +398,7 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
       'Número de proyectos activos simultáneos.'
     ],
     nextSteps: [
-      'Proponer café de trabajo en su estudio de Illescas para conocer sus cuellos de botella.'
+      'Proponer café de trabajo en su estudio de Illescas para conocer sus fricciones operativas.'
     ],
     crmStatus: 'seleccionada',
     notes: [],
@@ -490,7 +490,7 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
     },
     opportunityIndex: 84,
     justification: 'Despacho profesional con 140 pymes clientes que se bloquea en los cierres de trimestre fiscal y laboral. El soporte en recopilación documental y contacto amable evita multas y enfados de clientes.',
-    source: 'Asociación Empresarial Sur de Madrid & Búsqueda B2B',
+    source: 'Asociación especialista en gestión, organización y desarrollo de oportunidades de negociol Sur de Madrid & Búsqueda especialista en gestión, organización y desarrollo de oportunidades de negociol',
     sourceDate: '22 de Octubre de 2026',
     description: 'Despacho con 5 graduados sociales y economistas que pierden horas llamando a clientes para que envíen facturas, tickets y justificantes de transferencias antes del día 20.',
     businessActivity: 'Asesoramiento fiscal, contable y laboral a autónomos y pequeñas empresas.',
@@ -639,11 +639,11 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
       'Contrato indefinido desde el primer día.'
     ],
     risks: [
-      'Pérdida de la plena autonomía como profesional independiente y menor dedicación a ERIA HOUSE.',
+      'Pérdida de la plena autonomía como profesional independiente y menor dedicación a Gestión Inmobiliaria Propia.',
       'Proceso de selección con varias fases y entrevista competencial.'
     ],
     pendingInfo: [
-      'Posibilidad de compatibilizar con la gestión residual de ERIA HOUSE.',
+      'Posibilidad de compatibilizar con la gestión residual de Gestión Inmobiliaria Propia.',
       'Fecha límite de recepción de candidaturas.'
     ],
     nextSteps: [
@@ -677,7 +677,7 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
       stabilityRating: 'Muy Alta (Contrato Indefinido)',
       flexibilityRating: 'Alta (Flexibilidad de entrada/salida de 45 min)',
       contractConditions: 'Convenio de empresa propio, seguro médico privado y 24 días laborables de vacaciones.',
-      opportunityCostVsFreelance: 'Ingreso neto asegurado de 2.450 €/mes sin incertidumbre comercial. Frente a 3 clientes de consultoría (aprox. 3.200 € facturados brutos menos cuota e IRPF = ~2.300 € netos). El ratio económico es ligeramente favorable por cuenta ajena, pero resta tiempo a ERIA HOUSE.',
+      opportunityCostVsFreelance: 'Ingreso neto asegurado de 2.450 €/mes sin incertidumbre comercial. Frente a 3 clientes de consultoría (aprox. 3.200 € facturados brutos menos cuota e IRPF = ~2.300 € netos). El ratio económico es ligeramente favorable por cuenta ajena, pero resta tiempo a Gestión Inmobiliaria Propia.',
       meetsPalmiraCriteria: true
     }
   },
@@ -746,7 +746,7 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
     businessActivity: 'Red de intermediación residencial.',
     identifiedNeed: 'Falta de uniformidad en los contratos y retrasos en los depósitos de fianzas legales.',
     servicesOffered: ['Colaboración con inmobiliarias', 'Coordinación de operaciones', 'Gestión documental'],
-    fitReasons: ['Dominio del sector en ERIA HOUSE.'],
+    fitReasons: ['Dominio del sector en Gestión Inmobiliaria Propia.'],
     advantages: ['Tarifa mensual fija repartida entre los 6 agentes (muy asequible para ellos y rentable para Palmira).'],
     risks: ['Poner de acuerdo a profesionales independientes con distintas formas de trabajar.'],
     pendingInfo: ['Reunión previa con el portavoz del grupo.'],
@@ -786,7 +786,7 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
     servicesOffered: ['Apoyo administrativo externo'],
     fitReasons: ['Cumple con los requisitos básicos pero infravalora la experiencia de Palmira.'],
     advantages: ['Contrato fijo.'],
-    risks: ['Desgaste de desplazamientos (116 km diarios), horario partido incompatible con la vida familiar y proyecto empresarial propio.'],
+    risks: ['Desgaste de desplazamientos (116 km diarios), horario partido incompatible con la vida familiar y proyecto especialista en gestión, organización y desarrollo de oportunidades de negociol propio.'],
     pendingInfo: ['Ninguna. Descartada por sistema.'],
     nextSteps: ['Mantener en archivo de descartadas como referencia comparativa.'],
     crmStatus: 'descartada',

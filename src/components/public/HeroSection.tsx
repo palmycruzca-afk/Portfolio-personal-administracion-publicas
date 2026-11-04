@@ -36,7 +36,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-violet-950/70 border border-violet-500/40 text-violet-300 font-semibold text-[11px] uppercase tracking-wider">
               <Zap className="w-3 h-3 text-cyan-400" />
-              Consultoría Operativa & Crecimiento B2B
+              Consultoría Operativa & Crecimiento especialista en gestión, organización y desarrollo de oportunidades de negociol
             </span>
             <span className="text-stone-600 hidden sm:inline" aria-hidden="true">·</span>
             <span className="text-stone-400 hidden sm:inline">{PERSONAL_DATA.locationPrimary}</span>
@@ -59,7 +59,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-block">
               <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-violet-400">
-                Palmira Cruz · Profesional Independiente & Empresaria
+                Palmira Cruz · Profesional Independiente & especialista en gestión, organización y desarrollo de oportunidades de negocio
               </span>
             </div>
 
@@ -139,7 +139,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <div className="relative rounded-3xl overflow-hidden glass-card border border-white/20 shadow-2xl shadow-violet-950/70 aspect-square group">
                 <img
                   src={palmiraOfficialPhoto}
-                  alt="Palmira Cruz — Profesional Independiente & Empresaria"
+                  alt="Palmira Cruz — Profesional Independiente & especialista en gestión, organización y desarrollo de oportunidades de negocio"
                   className="w-full h-full object-cover object-center select-none transform group-hover:scale-[1.02] transition-transform duration-500"
                   loading="eager"
                   decoding="async"
@@ -156,7 +156,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                       </span>
                     </div>
                     <div className="text-[11px] sm:text-xs text-violet-300 font-medium mt-0.5">
-                      Fundadora ERIA HOUSE · Coordinación & Gestión
+                      Dirección de Negocios · Gestión Inmobiliaria
                     </div>
                   </div>
                   <div className="text-right hidden sm:block">
@@ -166,28 +166,28 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
               </div>
 
-              {/* Floating Widget 1: Conexión B2B (Top-Right) */}
+              {/* Floating Widget 1: Conexión especialista en gestión, organización y desarrollo de oportunidades de negociol (Top-Right) */}
               <div className="absolute -top-4 -right-3 sm:-right-6 bg-slate-900/90 backdrop-blur-xl border border-violet-500/50 p-3 sm:p-3.5 rounded-xl shadow-2xl max-w-[200px] animate-float z-10">
                 <div className="flex items-center gap-2">
                   <Activity className="w-4 h-4 text-cyan-400" />
-                  <span className="text-[10px] font-mono uppercase text-cyan-300 font-bold">Conexión B2B</span>
+                  <span className="text-[10px] font-mono uppercase text-cyan-300 font-bold">Gestión y Negocio</span>
                 </div>
                 <div className="text-xs font-bold text-white mt-1">
                   Coordinación de Operaciones
                 </div>
                 <div className="text-[10px] text-stone-300 mt-0.5">
-                  Desatasco de cuellos de botella
+                  optimización y mejora de procesos
                 </div>
               </div>
 
-              {/* Floating Widget 2: ERIA HOUSE (Bottom-Left) */}
+              {/* Floating Widget 2: Iniciativa Inmobiliaria (Bottom-Left) */}
               <div className="absolute -bottom-5 -left-3 sm:-left-6 bg-slate-900/95 backdrop-blur-xl border border-cyan-400/40 p-3 sm:p-3.5 rounded-xl shadow-2xl max-w-[220px] z-10">
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4 text-violet-400" />
-                  <span className="text-[10px] font-mono uppercase text-violet-300 font-bold">Iniciativa Propia</span>
+                  <span className="text-[10px] font-mono uppercase text-violet-300 font-bold">Experiencia Propia</span>
                 </div>
                 <div className="text-xs font-bold text-white mt-1">
-                  ERIA HOUSE Inmobiliaria
+                  Dirección Inmobiliaria
                 </div>
                 <div className="text-[10px] text-stone-300 mt-0.5">
                   Negociación y control documental
@@ -201,7 +201,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="mt-16 pt-10 border-t border-white/10 grid grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="p-4 rounded-xl glass-card border border-white/10 space-y-1">
             <div className="text-2xl sm:text-3xl font-extrabold text-white font-mono tracking-tight">
-              Eficacia B2B
+              Eficacia Directiva
             </div>
             <div className="text-xs sm:text-sm font-semibold text-stone-200">Enfoque resolutivo y metódico</div>
             <div className="text-xs text-stone-400">Procesos ágiles, sin rodeos y adaptados a cada empresa.</div>
@@ -209,9 +209,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           <div className="p-4 rounded-xl glass-card border border-white/10 space-y-1">
             <div className="text-2xl sm:text-3xl font-extrabold text-gradient-electric font-mono tabular-nums tracking-tight">
-              ERIA HOUSE
+              Sector Inmobiliario
             </div>
-            <div className="text-xs sm:text-sm font-semibold text-stone-200">Proyecto empresarial propio</div>
+            <div className="text-xs sm:text-sm font-semibold text-stone-200">Dirección y gestión propia</div>
             <div className="text-xs text-stone-400">Operaciones, negociación y rigor documental.</div>
           </div>
 

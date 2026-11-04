@@ -21,7 +21,7 @@ export const PERSONAL_DATA = {
   email: 'palmycruzca@gmail.com',
   locationPrimary: 'Illescas (Toledo) / Sur de Madrid',
   locationScope: 'Presencial en Toledo y Madrid Sur · Soporte remoto para toda España',
-  bioIntro: `Mi vocación es aportar orden, serenidad operativa y eficiencia. Ayudo a empresarios y directores a desenredar cuellos de botella diarios: desde ordenar la gestión documental y coordinar agendas de personal, hasta atender con calidez y rigor a clientes clave o dinamizar operaciones comerciales.`,
+  bioIntro: `Mi vocación es aportar orden, serenidad operativa y eficiencia. Ayudo a directivos y responsables a resolver fricciones operativas diarias: desde ordenar la gestión documental y coordinar agendas de personal, hasta atender con calidez y rigor a clientes clave o dinamizar operaciones comerciales.`,
   validationNotice: 'Compromiso profesional basado en soluciones prácticas y resultados medibles.',
 };
 
@@ -29,7 +29,7 @@ export const SERVICES_DATA: ServiceCategory[] = [
   {
     id: 'admin-organizacion',
     title: '1. Administración y Organización',
-    summary: 'Estructuración ordenada de la rutina empresarial para que la dirección recupere su tiempo.',
+    summary: 'Estructuración ordenada de la rutina especialista en gestión, organización y desarrollo de oportunidades de negociol para que la dirección recupere su tiempo.',
     services: [
       {
         id: 'apoyo-admin-externo',
@@ -78,7 +78,7 @@ export const SERVICES_DATA: ServiceCategory[] = [
         title: 'Apoyo en selección y contratación',
         description: 'Criba preliminar de candidaturas, comprobación de referencias, coordinación de entrevistas y preparación de documentación previa al alta laboral.',
         deliverables: ['Informes de encaje de candidatos', 'Agenda de entrevistas', 'Expediente de incorporación listo'],
-        typicalCases: 'Negocios sin departamento formal de RRHH que necesitan contratar personal de confianza.'
+        typicalCases: 'Negocios sin departamento formal de recursos humanos que necesitan contratar personal de confianza.'
       },
       {
         id: 'coordinacion-personal',
@@ -105,7 +105,7 @@ export const SERVICES_DATA: ServiceCategory[] = [
         id: 'apoyo-admin-personal',
         title: 'Apoyo administrativo a departamentos de personal',
         description: 'Soporte auxiliar en la preparación de partes mensuales para la asesoría laboral, control de absentismos y certificados.',
-        deliverables: ['Listados depurados de variables para nóminas', 'Control documental de prevención de riesgos (PRL)'],
+        deliverables: ['Listados depurados de variables para nóminas', 'Control documental de prevención de riesgos'],
         typicalCases: 'Responsables de personal sobrecargados en cierres de mes.'
       }
     ]
@@ -127,7 +127,7 @@ export const SERVICES_DATA: ServiceCategory[] = [
         title: 'Coordinación de operaciones complejas',
         description: 'Supervisión del circuito completo de una operación desde el acuerdo inicial hasta la firma y entrega, alineando a todas las partes.',
         deliverables: ['Cronograma de hitos de la operación', 'Checklist documental previo a firmas'],
-        typicalCases: 'Operaciones donde intervienen varios profesionales (abogados, técnicos, clientes, bancos).'
+        typicalCases: 'Operaciones donde intervienen varios profesionales (abogados, técnicos, clientes, entidades).'
       },
       {
         id: 'colaboracion-inmobiliarias',
@@ -144,8 +144,8 @@ export const SERVICES_DATA: ServiceCategory[] = [
         typicalCases: 'Clientes de perfil exigente que valoran la interlocución directa y resolutiva.'
       },
       {
-        id: 'apoyo-proyectos-empresariales',
-        title: 'Apoyo a proyectos empresariales e iniciativas',
+        id: 'apoyo-proyectos-especialista en gestión, organización y desarrollo de oportunidades de negocioles',
+        title: 'Apoyo a proyectos especialista en gestión, organización y desarrollo de oportunidades de negocioles e iniciativas',
         description: 'Colaboración en la puesta en marcha de nuevas líneas de actividad, búsqueda de proveedores auxiliares y coordinación de arranque.',
         deliverables: ['Plan de acción inicial', 'Comparativa de opciones y proveedores'],
         typicalCases: 'Emprendedores y profesionales que lanzan una nueva iniciativa y necesitan una mano derecha operativa.'
@@ -156,16 +156,16 @@ export const SERVICES_DATA: ServiceCategory[] = [
 
 export const PROJECTS_DATA = [
   {
-    id: 'eria-house-project',
-    title: 'ERIA HOUSE',
-    subtitle: 'Proyecto Empresarial Propio — Gestión Inmobiliaria y Operativa',
+    id: 'gestion-inmobiliaria-propia',
+    title: 'Gestión y Dirección de Negocio Inmobiliario',
+    subtitle: 'Proyecto especialista en gestión, organización y desarrollo de oportunidades de negociol Propio — Gestión Inmobiliaria y Operativa',
     tag: 'Empresa Propia Activa',
     period: 'En curso',
-    description: 'Iniciativa empresarial independiente fundada por Palmira Cruz dedicada a la intermediación y coordinación integral de operaciones inmobiliarias. Destaca por el trato personal, la discreción y el exhaustivo control documental previo a cada transacción.',
+    description: 'Iniciativa especialista en gestión, organización y desarrollo de oportunidades de negociol independiente fundada y dirigida por Palmira Cruz dedicada a la intermediación, dirección y coordinación integral de operaciones en el sector inmobiliario. Destaca por la experiencia directiva, el trato personal, la discreción y el exhaustivo control documental previo a cada transacción.',
     highlights: [
-      'Coordinación directa de compraventas y arrendamientos en La Sagra y Madrid.',
-      'Control riguroso de expedientes jurídicos, notas registrales y tasaciones.',
-      'Fidelización de inversores locales gracias a la transparencia operativa.'
+      'Dirección y coordinación directa de compraventas y arrendamientos en La Sagra y Madrid.',
+      'Control riguroso de expedientes jurídicos, notas registrales, tasaciones y contratos.',
+      'Fidelización de clientes e inversores locales gracias a una sólida experiencia directiva y comercial.'
     ],
     imageKey: 'eria_house_project'
   },
@@ -175,11 +175,11 @@ export const PROJECTS_DATA = [
     subtitle: 'Plataforma Inteligente de Prospección y Gestión de Oportunidades',
     tag: 'Iniciativa Tecnológica',
     period: '2026',
-    description: 'Sistema privado de inteligencia empresarial diseñado para detectar oportunidades de externalización de servicios, colaboraciones y licitaciones en Toledo, La Sagra y la zona sur de Madrid, evaluando cada oportunidad con una fórmula matemática multicriterio transparente.',
+    description: 'Sistema privado de inteligencia especialista en gestión, organización y desarrollo de oportunidades de negociol diseñado para detectar oportunidades de externalización de servicios, colaboraciones y ofertas administrativas en Toledo, La Sagra y la zona sur de Madrid, evaluando cada oportunidad con una fórmula matemática multicriterio transparente.',
     highlights: [
       'Motor de prospección con ponderación multicriterio objetiva (Índice 0-100).',
-      'Generador de propuestas comerciales y presupuestos asistido por IA.',
-      'CRM comercial de 8 fases para un seguimiento riguroso y humano.'
+      'Generador de propuestas comerciales y presupuestos asistido por inteligencia artificial.',
+      'Sistema de gestión comercial para un seguimiento riguroso y humano.'
     ],
     imageKey: 'palmira_ai_concept'
   },
