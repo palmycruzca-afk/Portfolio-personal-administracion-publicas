@@ -57,21 +57,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           {/* Left Column: Headlines & CTA Matrix */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-block">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-violet-400">
-                Palmira Cruz · Profesional Independiente & especialista en gestión, organización y desarrollo de oportunidades de negocio
-              </span>
-            </div>
-
             <h1 
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.08]"
               style={{ textWrap: 'balance' }}
             >
-              Conecto talento, organización y oportunidades para <span className="text-gradient-purple-cyan">hacer crecer negocios</span>.
+              Administración, atención al cliente, <span className="text-gradient-purple-cyan">RRHH y selección de personal</span>.
             </h1>
 
             <p className="text-base sm:text-lg text-stone-300 leading-relaxed max-w-2xl font-normal">
-              Colaboro con empresas y profesionales para mejorar su gestión, coordinar personas, impulsar la atención al cliente y desarrollar nuevas oportunidades de negocio.
+              Experiencia en gestión documental, atención al cliente, actividad inmobiliaria, coordinación de proveedores, gestión de incidencias y organización de equipos.
             </p>
 
             {/* Brand Phrase Card in Glassmorphism */}
@@ -156,7 +150,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                       </span>
                     </div>
                     <div className="text-[11px] sm:text-xs text-violet-300 font-medium mt-0.5">
-                      Dirección de Negocios · Gestión Inmobiliaria
+                      Especialista en Clientes · Gestión de Personal · Administración · Incidencias · Proveedores
                     </div>
                   </div>
                   <div className="text-right hidden sm:block">

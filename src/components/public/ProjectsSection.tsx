@@ -48,7 +48,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onOpenAi, onCo
           </div>
 
           <div className="text-xs text-stone-400 font-mono">
-            Proyectos especialista en gestión, organización y desarrollo de oportunidades de negocioles reales en activo
+            Proyectos empresariales reales en activo
           </div>
         </motion.div>
 
