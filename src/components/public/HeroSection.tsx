@@ -118,7 +118,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {/* Main Portrait Frame - Preserving 100% of the original square composition and glowing ring */}
               <div className="relative rounded-3xl overflow-hidden glass-card border border-white/20 shadow-2xl shadow-violet-950/70 aspect-square group">
                 <img
-                  src="/assets/images/palmira_cruz_official.jpg"
+                  src="https://palmira-cruz.vercel.app/assets/images/palmira_cruz_official.jpg"
                   alt="Palmira Cruz — Profesional Independiente & especialista en gestión, organización y desarrollo de oportunidades de negocio"
                   className="w-full h-full object-cover object-center select-none transform group-hover:scale-[1.02] transition-transform duration-500"
                   loading="eager"
