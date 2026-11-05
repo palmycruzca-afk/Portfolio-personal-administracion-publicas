@@ -1,0 +1,6 @@
+{
+  "name": "Palmira Cruz — Consultoría y Palmira AI",
+  "description": "Web profesional de marca personal y servicios de apoyo operativo, coordinación y gestión de clientes de Palmira Cruz, junto con Palmira AI, asistente de inteligencia de negocio y prospección comercial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
