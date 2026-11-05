@@ -1,10 +1,25 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+.butterfly-logo {
+  display: inline-block;
+  font-size: 1.35rem;
+  line-height: 1;
+  transform-origin: center;
+  filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.45));
+  animation: butterflyFloat 3.2s ease-in-out infinite;
+}
+
+.butterfly-logo:hover { animation-duration: 1.2s; }
+
+@keyframes butterflyFloat {
+  0%, 100% { transform: translateY(0) rotate(-5deg) scale(1); }
+  50% { transform: translateY(-4px) rotate(5deg) scale(1.08); }
+}
+
 @layer base {
   :root {
-    --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-display: Georgia, 'Times New Roman', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
   }
   
@@ -14,20 +29,18 @@
   }
 
   body {
-    background-color: #08111c;
+    background-color: #070913;
     color: #F8FAFC;
     overflow-x: hidden;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
   }
 }
 
 /* Background Cyber Grid & Mesh */
 .bg-cyber-grid {
   background-image: 
-    linear-gradient(to right, rgba(159, 210, 201, 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(159, 210, 201, 0.045) 1px, transparent 1px);
-  background-size: 56px 56px;
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 .bg-cyber-dots {
@@ -37,28 +50,27 @@
 
 /* Glassmorphism Luxury */
 .glass-card {
-  background: rgba(15, 29, 42, 0.78);
-  backdrop-filter: blur(18px);
+  background: rgba(13, 17, 28, 0.72);
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(202, 229, 222, 0.12);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .glass-card-hover {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .glass-card-hover:hover {
-  background: rgba(21, 40, 53, 0.92);
-  border-color: rgba(115, 205, 190, 0.38);
-  box-shadow: 0 18px 48px -18px rgba(34, 197, 174, 0.28);
+  background: rgba(20, 26, 42, 0.85);
+  border-color: rgba(139, 92, 246, 0.35);
+  box-shadow: 0 10px 40px -10px rgba(124, 58, 237, 0.25);
   transform: translateY(-2px);
 }
 
 .glass-header {
-  background: rgba(8, 17, 28, 0.88);
+  background: rgba(7, 9, 19, 0.85);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border-bottom: 1px solid rgba(202, 229, 222, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 /* Radiant glow effects */
@@ -75,13 +87,13 @@
 }
 
 .text-gradient-purple-cyan {
-  background: linear-gradient(135deg, #f7fbf8 12%, #bfe9dc 60%, #74d5c1 100%);
+  background: linear-gradient(135deg, #FFFFFF 20%, #DDD6FE 60%, #38BDF8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-electric {
-  background: linear-gradient(135deg, #9fe2d3 0%, #63cdbb 50%, #d6ecdf 100%);
+  background: linear-gradient(135deg, #A78BFA 0%, #818CF8 50%, #2DD4BF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -105,19 +117,13 @@
   animation: pulseGlow 8s ease-in-out infinite;
 }
 
-.font-display { font-family: var(--font-display); }
-.section-kicker { color: #8fd8c6; letter-spacing: .18em; font-size: .68rem; font-weight: 800; text-transform: uppercase; }
-.section-title { letter-spacing: -.045em; }
-button, a, input, select, textarea { transition: all .2s ease; }
-button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #7ddac8; outline-offset: 3px; }
-
 /* Custom Scrollbars */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #08111c;
+  background: #070913;
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(148, 163, 184, 0.25);

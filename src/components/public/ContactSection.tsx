@@ -133,13 +133,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ preselectedServi
                 </div>
                 <div>
                   <div className="text-[11px] font-bold uppercase tracking-widest text-stone-400">
-                    Flexibilidad de contratación
+                    Disponibilidad y horario
                   </div>
-                  <div className="font-bold text-white text-base">
-                    Por horas, por proyecto o retainer mensual
-                  </div>
-                  <div className="text-[11px] text-stone-400 mt-0.5">
-                    Facturación como profesional independiente (autónoma).
+                  <div className="text-stone-200 text-sm mt-1 leading-relaxed font-medium">
+                    «Preferencia por oportunidades profesionales en horario de mañana, con especial interés en jornadas intensivas o parciales que permitan una buena organización y continuidad en el trabajo».
                   </div>
                 </div>
               </div>

@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
-import { Sparkles, Menu, X, ArrowUpRight } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { PERSONAL_DATA } from '../../data/personalData';
 
-interface PublicNavbarProps {
-  onOpenAi: () => void;
-  onContactClick: () => void;
-}
-
-export const PublicNavbar: React.FC<PublicNavbarProps> = ({ onOpenAi, onContactClick }) => {
+export const PublicNavbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -17,11 +13,11 @@ export const PublicNavbar: React.FC<PublicNavbarProps> = ({ onOpenAi, onContactC
           href="#inicio" 
           className="text-xl sm:text-2xl font-extrabold tracking-tight text-white hover:text-violet-300 transition-colors whitespace-nowrap shrink-0 flex items-center gap-2 group"
         >
-          <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-teal-300 to-emerald-200 group-hover:scale-125 transition-transform" />
+          <span className="butterfly-logo" aria-hidden="true">🦋</span>
           <span>PALMIRA CRUZ</span>
         </a>
 
-        {/* Zone 2: 4–5 concise links */}
+        {/* Zone 2: Navigation Links */}
         <nav className="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-stone-300">
           <a href="#sobre-mi" className="hover:text-white hover:text-violet-300 transition-colors whitespace-nowrap shrink-0">
             Sobre mí
@@ -40,29 +36,17 @@ export const PublicNavbar: React.FC<PublicNavbarProps> = ({ onOpenAi, onContactC
           </a>
         </nav>
 
-        {/* Zone 3: Primary Action & Palmira AI Link */}
+        {/* Zone 3: Primary Action */}
         <div className="flex items-center gap-3 shrink-0">
-          <button
-            type="button"
-            onClick={onOpenAi}
-            className="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-xl bg-teal-950/60 hover:bg-teal-900/70 text-teal-100 border border-teal-700/50 hover:border-teal-400 transition-all cursor-pointer shadow-sm hover:shadow-teal-900/40"
-            title="Abrir plataforma de inteligencia de negocio"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-teal-300" />
-            <span>Palmira AI</span>
-            <span className="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded bg-violet-800/80 text-violet-100 border border-violet-600/40">
-              Privado
-            </span>
-          </button>
-
-          <button
-            type="button"
-            onClick={onContactClick}
+          <a
+            href={PERSONAL_DATA.whatsappUrl}
+            target="_blank"
+            rel="noreferrer"
             className="px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-semibold rounded-xl text-stone-900 bg-gradient-to-r from-white via-stone-100 to-stone-200 hover:from-stone-100 hover:to-white shadow-lg shadow-white/5 transition-all cursor-pointer whitespace-nowrap shrink-0 flex items-center gap-1.5 hover:scale-[1.02]"
           >
-            <span>Hablemos de tu proyecto</span>
+            <span>Contactar</span>
             <ArrowUpRight className="w-4 h-4 text-stone-700" />
-          </button>
+          </a>
 
           {/* Mobile hamburger */}
           <button
@@ -85,20 +69,7 @@ export const PublicNavbar: React.FC<PublicNavbarProps> = ({ onOpenAi, onContactC
             <a href="#servicios" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-white">Servicios</a>
             <a href="#proyectos" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-white">Proyectos</a>
             <a href="#contacto" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-white">Contacto</a>
-          </div>
-
-          <div className="pt-4 border-t border-stone-800">
-            <button
-              type="button"
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenAi();
-              }}
-              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-semibold text-xs tracking-wide uppercase"
-            >
-              <Sparkles className="w-4 h-4 text-violet-200" />
-              <span>Acceder a Palmira AI</span>
-            </button>
+            <a href={PERSONAL_DATA.whatsappUrl} target="_blank" rel="noreferrer" onClick={() => setMobileMenuOpen(false)} className="py-1 text-emerald-300 hover:text-emerald-200">Contactar por WhatsApp</a>
           </div>
         </div>
       )}

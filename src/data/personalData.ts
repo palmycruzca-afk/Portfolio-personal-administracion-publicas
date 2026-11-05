@@ -15,21 +15,99 @@ export interface ServiceCategory {
 
 export const PERSONAL_DATA = {
   name: 'Palmira Cruz',
-  title: 'Conecto talento, organización y oportunidades para hacer crecer negocios',
-  subtitle: 'Colaboro con empresas y profesionales para mejorar su gestión, coordinar personas, impulsar la atención al cliente y desarrollar nuevas oportunidades de negocio.',
+  title: 'Administración, atención al cliente, RRHH y selección de personal',
+  subtitle: 'Experiencia en gestión documental, atención al cliente, actividad inmobiliaria, coordinación de proveedores, gestión de incidencias y organización de equipos.',
   brandMotto: '«Experiencia, iniciativa y compromiso. Las personas conectan oportunidades».',
-  email: 'palmycruzca@gmail.com',
+  email: 'palmy_ruby@hotmail.com',
+  phone: '687559537',
+  whatsappUrl: 'https://wa.me/34687559537?text=Hola%20Palmira%2C%20me%20gustar%C3%ADa%20conocer%20tus%20servicios.',
   locationPrimary: 'Illescas (Toledo) / Sur de Madrid',
   locationScope: 'Presencial en Toledo y Madrid Sur · Soporte remoto para toda España',
-  bioIntro: `Mi vocación es aportar orden, serenidad operativa y eficiencia. Ayudo a directivos y responsables a resolver fricciones operativas diarias: desde ordenar la gestión documental y coordinar agendas de personal, hasta atender con calidez y rigor a clientes clave o dinamizar operaciones comerciales.`,
+  bioIntro: `Profesional independiente, especialista en gestión, organización y desarrollo de oportunidades de negocio. Mi vocación es aportar orden, serenidad operativa y eficiencia en la administración, atención al cliente, coordinación de proveedores y gestión de equipos.`,
   validationNotice: 'Compromiso profesional basado en soluciones prácticas y resultados medibles.',
 };
+
+export const TRAINING_DATA = [
+  {
+    id: 'rh-nebrija',
+    title: 'Recursos Humanos',
+    description: 'Curso especializado en gestión de personas, organización de equipos y normativa laboral.',
+    endorsement: 'Avalado por la Universidad Nebrija',
+  },
+  {
+    id: 'ia-camara-toledo',
+    title: 'Inteligencia Artificial',
+    description: 'Aplicación práctica de herramientas de inteligencia artificial para la optimización de procesos y tareas administrativas.',
+    endorsement: 'Avalado y financiado por la Cámara de Comercio de Toledo',
+  }
+];
+
+export const CAPABILITIES_AREAS = [
+  {
+    id: 'atencion-cliente',
+    title: 'Atención al cliente y gestión comercial',
+    description: 'Relación cercana, profesional y resolutiva con clientes y usuarios.',
+    items: [
+      'Atención y asesoramiento a clientes.',
+      'Gestión de consultas, reclamaciones e incidencias.',
+      'Seguimiento de clientes y operaciones.',
+      'Comunicación y apoyo comercial.'
+    ]
+  },
+  {
+    id: 'admin-documental',
+    title: 'Administración y gestión documental',
+    description: 'Rigor y orden en el tratamiento de archivos, expedientes y bases de datos.',
+    items: [
+      'Gestión y organización documental.',
+      'Archivo, expedientes y registros.',
+      'Creación, actualización y mantenimiento de bases de datos.',
+      'Organización administrativa y seguimiento de tareas.'
+    ]
+  },
+  {
+    id: 'gestion-inmobiliaria',
+    title: 'Gestión y coordinación inmobiliaria',
+    description: 'Amplia experiencia directiva y operativa gestionando empresas del sector inmobiliario.',
+    items: [
+      'Gestión y coordinación de actividad empresarial inmobiliaria.',
+      'Organización y seguimiento de operaciones.',
+      'Atención, asesoramiento y seguimiento de clientes.',
+      'Gestión comercial y negociación.',
+      'Coordinación de profesionales y colaboradores.',
+      'Gestión administrativa y documental.',
+      'Desarrollo de negocio y oportunidades.'
+    ]
+  },
+  {
+    id: 'incidencias-proveedores',
+    title: 'Gestión de incidencias y proveedores',
+    description: 'Control de plazos, interlocución fluida y resolución eficaz de incidencias.',
+    items: [
+      'Recepción y seguimiento de incidencias.',
+      'Coordinación y comunicación con proveedores.',
+      'Solicitud y seguimiento de servicios.',
+      'Resolución de problemas y control de plazos.'
+    ]
+  },
+  {
+    id: 'rrhh-equipos',
+    title: 'Recursos humanos y coordinación de equipos',
+    description: 'Apoyo integral en la organización de plantillas, turnos y comunicación interna.',
+    items: [
+      'Apoyo en selección y contratación.',
+      'Organización de horarios y turnos.',
+      'Coordinación de equipos y tareas.',
+      'Comunicación y organización de personal.'
+    ]
+  }
+];
 
 export const SERVICES_DATA: ServiceCategory[] = [
   {
     id: 'admin-organizacion',
     title: '1. Administración y Organización',
-    summary: 'Estructuración ordenada de la rutina especialista en gestión, organización y desarrollo de oportunidades de negociol para que la dirección recupere su tiempo.',
+    summary: 'Estructuración ordenada de la rutina empresarial para que la dirección recupere su tiempo.',
     services: [
       {
         id: 'apoyo-admin-externo',
@@ -144,8 +222,8 @@ export const SERVICES_DATA: ServiceCategory[] = [
         typicalCases: 'Clientes de perfil exigente que valoran la interlocución directa y resolutiva.'
       },
       {
-        id: 'apoyo-proyectos-especialista en gestión, organización y desarrollo de oportunidades de negocioles',
-        title: 'Apoyo a proyectos especialista en gestión, organización y desarrollo de oportunidades de negocioles e iniciativas',
+        id: 'apoyo-proyectos-empresariales',
+        title: 'Apoyo a proyectos empresariales e iniciativas',
         description: 'Colaboración en la puesta en marcha de nuevas líneas de actividad, búsqueda de proveedores auxiliares y coordinación de arranque.',
         deliverables: ['Plan de acción inicial', 'Comparativa de opciones y proveedores'],
         typicalCases: 'Emprendedores y profesionales que lanzan una nueva iniciativa y necesitan una mano derecha operativa.'
@@ -158,30 +236,16 @@ export const PROJECTS_DATA = [
   {
     id: 'gestion-inmobiliaria-propia',
     title: 'Gestión y Dirección de Negocio Inmobiliario',
-    subtitle: 'Proyecto especialista en gestión, organización y desarrollo de oportunidades de negociol Propio — Gestión Inmobiliaria y Operativa',
-    tag: 'Empresa Propia Activa',
+    subtitle: 'Gestión Inmobiliaria y Operativa',
+    tag: 'Experiencia Profesional Activa',
     period: 'En curso',
-    description: 'Iniciativa especialista en gestión, organización y desarrollo de oportunidades de negociol independiente fundada y dirigida por Palmira Cruz dedicada a la intermediación, dirección y coordinación integral de operaciones en el sector inmobiliario. Destaca por la experiencia directiva, el trato personal, la discreción y el exhaustivo control documental previo a cada transacción.',
+    description: 'Iniciativa independiente fundada y dirigida por Palmira Cruz dedicada a la intermediación, dirección y coordinación integral de operaciones en el sector inmobiliario. Destaca por la sólida experiencia directiva, el trato personal, la discreción y el exhaustivo control documental previo a cada transacción.',
     highlights: [
       'Dirección y coordinación directa de compraventas y arrendamientos en La Sagra y Madrid.',
       'Control riguroso de expedientes jurídicos, notas registrales, tasaciones y contratos.',
       'Fidelización de clientes e inversores locales gracias a una sólida experiencia directiva y comercial.'
     ],
     imageKey: 'eria_house_project'
-  },
-  {
-    id: 'palmira-ai-lab',
-    title: 'PALMIRA AI',
-    subtitle: 'Plataforma Inteligente de Prospección y Gestión de Oportunidades',
-    tag: 'Iniciativa Tecnológica',
-    period: '2026',
-    description: 'Sistema privado de inteligencia especialista en gestión, organización y desarrollo de oportunidades de negociol diseñado para detectar oportunidades de externalización de servicios, colaboraciones y ofertas administrativas en Toledo, La Sagra y la zona sur de Madrid, evaluando cada oportunidad con una fórmula matemática multicriterio transparente.',
-    highlights: [
-      'Motor de prospección con ponderación multicriterio objetiva (Índice 0-100).',
-      'Generador de propuestas comerciales y presupuestos asistido por inteligencia artificial.',
-      'Sistema de gestión comercial para un seguimiento riguroso y humano.'
-    ],
-    imageKey: 'palmira_ai_concept'
   },
   {
     id: 'optimizacion-pymes',
@@ -197,4 +261,14 @@ export const PROJECTS_DATA = [
     ],
     imageKey: 'collaboration_workspace'
   }
+];
+
+export const WHAT_I_CAN_OFFER = [
+  'Administración y gestión documental.',
+  'Atención al cliente.',
+  'Gestión de bases de datos.',
+  'Gestión de incidencias y proveedores.',
+  'Coordinación de operaciones y equipos.',
+  'Gestión y coordinación inmobiliaria.',
+  'Apoyo comercial y seguimiento de clientes.'
 ];

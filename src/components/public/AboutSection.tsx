@@ -1,6 +1,6 @@
 import React from 'react';
-import { Target, Compass, Users2, Shield, AlertCircle, Sparkles, Check, ArrowRight } from 'lucide-react';
-import { PERSONAL_DATA } from '../../data/personalData';
+import { Target, Compass, Users2, Shield, Sparkles, CheckCircle2, GraduationCap, Building2 } from 'lucide-react';
+import { TRAINING_DATA, WHAT_I_CAN_OFFER } from '../../data/personalData';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -27,7 +27,7 @@ export const AboutSection: React.FC = () => {
         </div>
 
         {/* Story Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start mb-16">
           {/* Main narrative text */}
           <div className="lg:col-span-7 space-y-6 text-stone-300 text-base sm:text-lg leading-relaxed font-normal">
             <p>
@@ -39,7 +39,7 @@ export const AboutSection: React.FC = () => {
             </p>
 
             <p>
-              Como profesional independiente y especialista en gestión, organización y desarrollo de oportunidades de negocio con amplia trayectoria directiva en la gestión de negocios y el sector inmobiliario, conozco en primera persona la exigencia de coordinar operaciones complejas, negociar acuerdos, cuidar la atención al cliente y resolver trámites críticos sin margen para el error.
+              Como profesional independiente y especialista en gestión, organización y desarrollo de oportunidades de negocio, cuento con amplia trayectoria directiva en la gestión de negocios y el sector inmobiliario, conociendo en primera persona la exigencia de coordinar operaciones complejas, negociar acuerdos, cuidar la atención al cliente y resolver trámites críticos sin margen para el error.
             </p>
 
             {/* Quote Card */}
@@ -51,68 +51,47 @@ export const AboutSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: How I Can Help Your Business */}
+          {/* Right Column: Formación Complementaria & What I Can Offer */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="glass-card rounded-2xl p-6 sm:p-8 border border-white/10 shadow-2xl space-y-6">
+            {/* Formación Complementaria */}
+            <div className="glass-card rounded-2xl p-6 sm:p-7 border border-violet-500/30 shadow-xl space-y-4">
               <h3 className="text-xs font-bold text-violet-300 uppercase tracking-widest flex items-center gap-2">
-                <Target className="w-4 h-4 text-cyan-400" />
-                <span>¿Cómo puedo ayudar a tu empresa?</span>
+                <GraduationCap className="w-4 h-4 text-cyan-400" />
+                <span>Formación Complementaria</span>
               </h3>
 
-              <div className="space-y-4">
-                <div className="flex gap-4 items-start p-3 rounded-xl bg-white/[0.02] border border-white/5">
-                  <div className="p-2 rounded-lg bg-violet-950 text-violet-300 shrink-0 border border-violet-800/40">
-                    <Target className="w-5 h-5 text-violet-400" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-white">Liberando tiempo a la dirección</h4>
-                    <p className="text-xs text-stone-400 mt-1 leading-relaxed">
-                      Asumo el control documental, la gestión de turnos y el papeleo que consume tus tardes y fines de semana.
+              <div className="space-y-3">
+                {TRAINING_DATA.map((training) => (
+                  <div key={training.id} className="p-3.5 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
+                    <div className="flex items-center justify-between">
+                      <h4 className="text-sm font-bold text-white">{training.title}</h4>
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-violet-950 text-cyan-300 border border-violet-700/50">
+                        {training.endorsement}
+                      </span>
+                    </div>
+                    <p className="text-xs text-stone-400 leading-relaxed">
+                      {training.description}
                     </p>
                   </div>
-                </div>
-
-                <div className="flex gap-4 items-start p-3 rounded-xl bg-white/[0.02] border border-white/5">
-                  <div className="p-2 rounded-lg bg-indigo-950 text-indigo-300 shrink-0 border border-indigo-800/40">
-                    <Compass className="w-5 h-5 text-cyan-400" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-white">Autonomía e iniciativa resolutiva</h4>
-                    <p className="text-xs text-stone-400 mt-1 leading-relaxed">
-                      Sin necesidad de microgestión. Localizo dónde está el atasco operativo y aplico la solución más directa.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4 items-start p-3 rounded-xl bg-white/[0.02] border border-white/5">
-                  <div className="p-2 rounded-lg bg-teal-950 text-teal-300 shrink-0 border border-teal-800/40">
-                    <Users2 className="w-5 h-5 text-teal-400" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-white">Coordinación empática con personas</h4>
-                    <p className="text-xs text-stone-400 mt-1 leading-relaxed">
-                      Interlocución cordial y firme con empleados, colaboradores externos y clientes finales.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4 items-start p-3 rounded-xl bg-white/[0.02] border border-white/5">
-                  <div className="p-2 rounded-lg bg-stone-900 text-stone-300 shrink-0 border border-white/10">
-                    <Shield className="w-5 h-5 text-stone-300" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-white">Confidencialidad y compromiso estricto</h4>
-                    <p className="text-xs text-stone-400 mt-1 leading-relaxed">
-                      Máxima reserva en el manejo de documentación sensible, contratos mercantiles y acuerdos.
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
+            </div>
 
-              <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-stone-400">
-                <span className="font-semibold text-stone-300">Zona de actuación:</span>
-                <span>Illescas · Toledo · Madrid Sur · Remoto</span>
-              </div>
+            {/* Qué Puedo Aportar a una Empresa */}
+            <div className="glass-card rounded-2xl p-6 sm:p-7 border border-white/10 shadow-xl space-y-4">
+              <h3 className="text-xs font-bold text-violet-300 uppercase tracking-widest flex items-center gap-2">
+                <Building2 className="w-4 h-4 text-cyan-400" />
+                <span>Qué Puedo Aportar a una Empresa</span>
+              </h3>
+
+              <ul className="space-y-2.5 text-xs text-stone-300">
+                {WHAT_I_CAN_OFFER.map((offer, idx) => (
+                  <li key={idx} className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                    <span>{offer}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

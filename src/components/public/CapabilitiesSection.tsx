@@ -8,17 +8,10 @@ import {
   Sparkles, 
   ArrowRight,
   Target,
-  Compass,
   Zap,
-  TrendingUp,
+  Building2,
   ShieldCheck
 } from 'lucide-react';
-
-export interface CapabilityItem {
-  id: string;
-  name: string;
-  solutionOutcome: string;
-}
 
 export interface CapabilityArea {
   id: string;
@@ -26,141 +19,84 @@ export interface CapabilityArea {
   title: string;
   subtitle: string;
   icon: React.ElementType;
-  glowColor: string;
-  accentBorder: string;
-  capabilities: CapabilityItem[];
+  items: string[];
   practicalImpact: string;
 }
 
-export const CAPABILITIES_AREAS: CapabilityArea[] = [
-  {
-    id: 'gestion-administrativa',
-    number: '01',
-    title: 'Gestión administrativa y organización',
-    subtitle: 'Estructura, rigor documental y eliminación del desorden operativo',
-    icon: FileText,
-    glowColor: 'from-violet-600 to-indigo-600',
-    accentBorder: 'border-violet-500/40',
-    capabilities: [
-      {
-        id: 'c-1',
-        name: 'Gestión documental y administrativa',
-        solutionOutcome: 'Control de archivos, expedientes, facturación y contratos para tener cada documento localizado al instante.',
-      },
-      {
-        id: 'c-2',
-        name: 'Organización de procesos y tareas',
-        solutionOutcome: 'Mapeo y simplificación de las rutinas de trabajo para evitar duplicidades, despistes y fricciones operativas.',
-      },
-      {
-        id: 'c-3',
-        name: 'Coordinación y seguimiento de operaciones',
-        solutionOutcome: 'Supervisión activa del circuito de trabajo para asegurar que cada compromiso se cumple en tiempo y forma.',
-      },
-      {
-        id: 'c-4',
-        name: 'Planificación y organización del trabajo',
-        solutionOutcome: 'Priorización diaria y semanal de tareas clave para que la dirección recupere su tiempo estratégico.',
-      },
-    ],
-    practicalImpact: 'Transformo el papeleo disperso y las urgencias en flujos de trabajo claros, medibles y tranquilos.',
-  },
-  {
-    id: 'gestion-personas',
-    number: '02',
-    title: 'Gestión de personas',
-    subtitle: 'Cohesión, horarios equilibrados y resolución ágil de incidencias internas',
-    icon: Users,
-    glowColor: 'from-cyan-500 to-teal-500',
-    accentBorder: 'border-cyan-500/40',
-    capabilities: [
-      {
-        id: 'c-5',
-        name: 'Apoyo en selección y contratación',
-        solutionOutcome: 'Filtro inicial de candidaturas, comprobación de referencias y recopilación de documentación para altas.',
-      },
-      {
-        id: 'c-6',
-        name: 'Organización de horarios y turnos',
-        solutionOutcome: 'Diseño equitativo de cuadrantes de trabajo, gestión de permisos, bajas imprevistas y coberturas.',
-      },
-      {
-        id: 'c-7',
-        name: 'Coordinación de equipos',
-        solutionOutcome: 'Punto de apoyo central para alinear las tareas diarias del personal y canalizar dudas con claridad.',
-      },
-      {
-        id: 'c-8',
-        name: 'Comunicación y resolución de incidencias',
-        solutionOutcome: 'Intervención templada y empática ante desajustes cotidianos para mantener un clima de confianza.',
-      },
-    ],
-    practicalImpact: 'Conecto personas con criterio y empatía, asegurando cobertura operativa sin generar tensiones en el equipo.',
-  },
+export const CAPABILITIES_AREAS_PUBLIC: CapabilityArea[] = [
   {
     id: 'atencion-cliente',
-    number: '03',
+    number: '01',
     title: 'Atención al cliente y gestión comercial',
-    subtitle: 'Cuidado del detalle, respuesta inmediata y desarrollo de relaciones de confianza',
+    subtitle: 'Relación cercana, profesional y resolutiva con clientes y usuarios',
     icon: Headphones,
-    glowColor: 'from-indigo-500 to-violet-500',
-    accentBorder: 'border-indigo-500/40',
-    capabilities: [
-      {
-        id: 'c-9',
-        name: 'Atención y asesoramiento al cliente',
-        solutionOutcome: 'Trato profesional, educado y cercano que transmite la máxima solvencia de tu negocio desde el primer contacto.',
-      },
-      {
-        id: 'c-10',
-        name: 'Seguimiento de clientes',
-        solutionOutcome: 'Contacto continuado para mantener informados a clientes e inversores del avance de sus trámites o pedidos.',
-      },
-      {
-        id: 'c-11',
-        name: 'Gestión de consultas e incidencias',
-        solutionOutcome: 'Respuestas ágiles a dudas y reclamaciones, transformando objeciones en clientes fidelizados.',
-      },
-      {
-        id: 'c-12',
-        name: 'Apoyo comercial y desarrollo de relaciones',
-        solutionOutcome: 'Dinamización de contactos clave, emisión de propuestas y reactivación de cuentas comerciales.',
-      },
+    items: [
+      'Atención y asesoramiento a clientes.',
+      'Gestión de consultas, reclamaciones e incidencias.',
+      'Seguimiento de clientes y operaciones.',
+      'Comunicación y apoyo comercial.'
     ],
-    practicalImpact: 'Protejo la reputación comercial de tu empresa ofreciendo una atención que genera recomendaciones y confianza.',
+    practicalImpact: 'Protejo la reputación comercial de tu empresa ofreciendo una atención que genera confianza y fidelización.'
   },
   {
-    id: 'coordinacion-negocios',
-    number: '04',
-    title: 'Coordinación y desarrollo de negocios',
-    subtitle: 'Visión global, enlace de colaboradores y ejecución rigurosa de proyectos',
-    icon: Briefcase,
-    glowColor: 'from-violet-500 to-cyan-400',
-    accentBorder: 'border-cyan-400/40',
-    capabilities: [
-      {
-        id: 'c-13',
-        name: 'Organización de operaciones',
-        solutionOutcome: 'Alineación de todas las partes involucradas en una operación (proveedores, gestorías, técnicos, clientes).',
-      },
-      {
-        id: 'c-14',
-        name: 'Coordinación de colaboradores',
-        solutionOutcome: 'Seguimiento de entregas de profesionales externos para garantizar que nada se quede sin hacer.',
-      },
-      {
-        id: 'c-15',
-        name: 'Identificación de oportunidades',
-        solutionOutcome: 'Detección proactiva de necesidades no cubiertas en clientes existentes y en el mercado local.',
-      },
-      {
-        id: 'c-16',
-        name: 'Seguimiento de proyectos y colaboraciones',
-        solutionOutcome: 'Control de cronogramas y compromisos adquiridos para asegurar el éxito final de cada iniciativa.',
-      },
+    id: 'admin-documental',
+    number: '02',
+    title: 'Administración y gestión documental',
+    subtitle: 'Rigor y orden en el tratamiento de archivos, expedientes y bases de datos',
+    icon: FileText,
+    items: [
+      'Gestión y organización documental.',
+      'Archivo, expedientes y registros.',
+      'Creación, actualización y mantenimiento de bases de datos.',
+      'Organización administrativa y seguimiento de tareas.'
     ],
-    practicalImpact: 'Aporto visión de negocio y constancia para que las buenas ideas se conviertan en operaciones cerradas.',
+    practicalImpact: 'Transformo el papeleo disperso en flujos de trabajo claros, ordenados y de acceso inmediato.'
   },
+  {
+    id: 'gestion-inmobiliaria',
+    number: '03',
+    title: 'Gestión y coordinación inmobiliaria',
+    subtitle: 'Experiencia directa en la dirección y gestión de empresas del sector inmobiliario',
+    icon: Building2,
+    items: [
+      'Gestión y coordinación de actividad empresarial inmobiliaria.',
+      'Organización y seguimiento de operaciones.',
+      'Atención, asesoramiento y seguimiento de clientes.',
+      'Gestión comercial y negociación.',
+      'Coordinación de profesionales y colaboradores.',
+      'Gestión administrativa y documental.',
+      'Desarrollo de negocio y oportunidades.'
+    ],
+    practicalImpact: 'Aporto rigor directivo, dominio del ciclo inmobiliario y control exhaustivo de cada expediente de compraventa o arrendamiento.'
+  },
+  {
+    id: 'incidencias-proveedores',
+    number: '04',
+    title: 'Gestión de incidencias y proveedores',
+    subtitle: 'Control de plazos, interlocución fluida y resolución eficaz de incidencias',
+    icon: ShieldCheck,
+    items: [
+      'Recepción y seguimiento de incidencias.',
+      'Coordinación y comunicación con proveedores.',
+      'Solicitud y seguimiento de servicios.',
+      'Resolución de problemas y control de plazos.'
+    ],
+    practicalImpact: 'Despreocupación operativa: centralizo la relación con proveedores y aseguro que cada incidencia se resuelva sin retrasos.'
+  },
+  {
+    id: 'rrhh-equipos',
+    number: '05',
+    title: 'Recursos humanos y coordinación de equipos',
+    subtitle: 'Apoyo integral en la organización de plantillas, turnos y comunicación interna',
+    icon: Users,
+    items: [
+      'Apoyo en selección y contratación.',
+      'Organización de horarios y turnos.',
+      'Coordinación de equipos y tareas.',
+      'Comunicación y organización de personal.'
+    ],
+    practicalImpact: 'Cohesión y equilibrio en los equipos de trabajo, asegurando coberturas óptimas y un clima laboral ordenado.'
+  }
 ];
 
 interface CapabilitiesSectionProps {
@@ -168,9 +104,9 @@ interface CapabilitiesSectionProps {
 }
 
 export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onSelectAreaToContact }) => {
-  const [selectedAreaId, setSelectedAreaId] = useState<string>(CAPABILITIES_AREAS[0].id);
+  const [selectedAreaId, setSelectedAreaId] = useState<string>(CAPABILITIES_AREAS_PUBLIC[0].id);
 
-  const activeArea = CAPABILITIES_AREAS.find(a => a.id === selectedAreaId) || CAPABILITIES_AREAS[0];
+  const activeArea = CAPABILITIES_AREAS_PUBLIC.find(a => a.id === selectedAreaId) || CAPABILITIES_AREAS_PUBLIC[0];
 
   return (
     <section id="capacidades" className="py-20 sm:py-28 bg-[#070913] relative overflow-hidden bg-cyber-dots">
@@ -185,39 +121,19 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onSele
         <div className="max-w-3xl mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-violet-400 mb-2">
             <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Fortalezas & Soluciones Profesionales</span>
+            <span>Habilidades & Experiencia Profesional</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
             Lo que sé hacer y cómo puedo ayudarte
           </h2>
           <p className="text-stone-300 text-base sm:text-lg mt-3 font-normal leading-relaxed">
-            Capacidades operativas probadas para resolver problemas reales en el día a día de empresas, negocios y profesionales independientes.
+            Áreas de competencia profesional diseñadas para aportar valor inmediato en empresas, negocios y despachos.
           </p>
         </div>
 
-        {/* Highlighted Quote Banner */}
-        <div className="mb-14 p-6 sm:p-8 rounded-3xl glass-card border border-violet-500/30 relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-cyan-400 via-violet-500 to-indigo-600" />
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pl-2 sm:pl-4">
-            <div className="space-y-1">
-              <span className="text-[11px] font-mono uppercase tracking-widest text-cyan-300 font-bold block">
-                Filosofía de colaboración
-              </span>
-              <p className="text-lg sm:text-xl lg:text-2xl font-bold text-white leading-snug">
-                «No se trata solo de hacer tareas, sino de entender lo que necesita cada negocio, organizarlo y ayudarle a avanzar».
-              </p>
-            </div>
-
-            <div className="shrink-0 flex items-center gap-2 text-xs font-semibold text-stone-300 bg-white/[0.04] px-4 py-2.5 rounded-xl border border-white/10">
-              <Target className="w-4 h-4 text-cyan-400" />
-              <span>Enfoque resolutivo y práctico</span>
-            </div>
-          </div>
-        </div>
-
-        {/* 4 Interactive Area Selector Tabs */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
-          {CAPABILITIES_AREAS.map((area) => {
+        {/* 5 Interactive Area Selector Tabs */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
+          {CAPABILITIES_AREAS_PUBLIC.map((area) => {
             const isSelected = selectedAreaId === area.id;
             const Icon = area.icon;
 
@@ -226,7 +142,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onSele
                 key={area.id}
                 type="button"
                 onClick={() => setSelectedAreaId(area.id)}
-                className={`p-6 rounded-2xl border text-left transition-all duration-300 cursor-pointer relative overflow-hidden group ${
+                className={`p-5 rounded-2xl border text-left transition-all duration-300 cursor-pointer relative overflow-hidden group ${
                   isSelected
                     ? 'glass-card border-cyan-400/60 shadow-2xl shadow-cyan-950/40 ring-1 ring-cyan-400/40 -translate-y-1'
                     : 'bg-white/[0.02] border-white/10 hover:bg-white/[0.05] hover:border-white/20'
@@ -245,12 +161,9 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onSele
                   </div>
                 </div>
 
-                <h3 className="text-base font-bold text-white leading-snug group-hover:text-cyan-300 transition-colors">
+                <h3 className="text-sm font-bold text-white leading-snug group-hover:text-cyan-300 transition-colors">
                   {area.title}
                 </h3>
-                <p className="text-xs text-stone-400 mt-2 line-clamp-2 leading-relaxed">
-                  {area.subtitle}
-                </p>
               </button>
             );
           })}
@@ -263,7 +176,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onSele
               <div className="flex items-center gap-2 text-xs font-mono text-cyan-300 font-bold uppercase tracking-widest">
                 <span>Área {activeArea.number}</span>
                 <span className="text-stone-600">·</span>
-                <span>Soluciones Aplicadas</span>
+                <span>Competencias Detalladas</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
                 {activeArea.title}
@@ -285,26 +198,19 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onSele
             )}
           </div>
 
-          {/* 4 Capabilities Grid with Solution Outcomes */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {activeArea.capabilities.map((cap) => (
+          {/* Capabilities Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {activeArea.items.map((item, idx) => (
               <div
-                key={cap.id}
-                className="p-5 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-violet-500/40 hover:bg-white/[0.04] transition-all space-y-2 group"
+                key={idx}
+                className="p-4 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-violet-500/40 hover:bg-white/[0.04] transition-all flex items-start gap-3"
               >
-                <div className="flex items-start gap-3">
-                  <div className="p-1.5 rounded-lg bg-cyan-950/60 border border-cyan-500/40 text-cyan-300 shrink-0 mt-0.5">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm sm:text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
-                      {cap.name}
-                    </h4>
-                    <p className="text-xs sm:text-sm text-stone-300 leading-relaxed mt-1 font-normal">
-                      {cap.solutionOutcome}
-                    </p>
-                  </div>
+                <div className="p-1.5 rounded-lg bg-cyan-950/60 border border-cyan-500/40 text-cyan-300 shrink-0 mt-0.5">
+                  <CheckCircle2 className="w-4 h-4 text-cyan-400" />
                 </div>
+                <span className="text-sm text-white font-medium leading-relaxed">
+                  {item}
+                </span>
               </div>
             ))}
           </div>
@@ -316,7 +222,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onSele
             </div>
             <div>
               <span className="font-bold text-white block mb-0.5 text-xs uppercase tracking-wider">
-                Impacto operativo en tu negocio:
+                Aportación de valor:
               </span>
               <p className="text-stone-300 leading-relaxed font-normal">
                 {activeArea.practicalImpact}

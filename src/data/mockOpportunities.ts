@@ -17,7 +17,7 @@ export const INITIAL_OPPORTUNITIES: Opportunity[] = [
     isTop10: true,
     company: 'Centro especialista en gestión, organización y desarrollo de oportunidades de negociol Iberum Illescas',
     title: 'Soporte Administrativo Externo y Coordinación Documental de Facturación',
-    sector: 'Servicios especialista en gestión, organización y desarrollo de oportunidades de negocioles & Administración',
+    sector: 'Servicios empresariales & Administración',
     category: 'captacion',
     location: 'Plataforma Central Iberum, Illescas (Toledo)',
     distanceKm: 4,

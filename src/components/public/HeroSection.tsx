@@ -1,18 +1,14 @@
 import React from 'react';
-import { ArrowDown, ArrowUpRight, Sparkles, CheckCircle2, ShieldCheck, Zap, Activity, Users } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, CheckCircle2, ShieldCheck, Zap, Activity } from 'lucide-react';
 import { PERSONAL_DATA } from '../../data/personalData';
 import palmiraOfficialPhoto from '../../assets/images/palmira_cruz_official.jpg';
 
 interface HeroSectionProps {
   onExploreServices: () => void;
-  onContactClick: () => void;
-  onOpenAi: () => void;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
   onExploreServices,
-  onContactClick,
-  onOpenAi,
 }) => {
   return (
     <section id="inicio" className="relative min-h-[92vh] flex flex-col justify-center pt-8 pb-20 sm:pt-14 sm:pb-28 overflow-hidden bg-cyber-grid">
@@ -36,42 +32,26 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-violet-950/70 border border-violet-500/40 text-violet-300 font-semibold text-[11px] uppercase tracking-wider">
               <Zap className="w-3 h-3 text-cyan-400" />
-              Consultoría operativa · organización · crecimiento
+              Consultoría Operativa & Crecimiento especialista en gestión, organización y desarrollo de oportunidades de negocio
             </span>
             <span className="text-stone-600 hidden sm:inline" aria-hidden="true">·</span>
             <span className="text-stone-400 hidden sm:inline">{PERSONAL_DATA.locationPrimary}</span>
           </div>
-
-          <button
-            type="button"
-            onClick={onOpenAi}
-            className="group inline-flex items-center gap-2 text-xs font-semibold text-cyan-300 hover:text-white transition-colors cursor-pointer"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-cyan-400 group-hover:rotate-12 transition-transform" />
-            <span>Acceder a Palmira AI (Motor de Oportunidades)</span>
-            <span className="text-cyan-400 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
-          </button>
         </div>
 
         {/* 2-Column Split: Powerful Hero Copy + Sophisticated Floating Visual Layer */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           {/* Left Column: Headlines & CTA Matrix */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-block">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-violet-400">
-                Palmira Cruz · Profesional independiente · gestión y desarrollo de negocio
-              </span>
-            </div>
-
             <h1 
-              className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.02] section-title"
+              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.08]"
               style={{ textWrap: 'balance' }}
             >
-              Conecto talento, organización y oportunidades para <span className="text-gradient-purple-cyan">hacer crecer negocios</span>.
+              Administración, atención al cliente, <span className="text-gradient-purple-cyan">IA, RRHH y selección de personal</span>.
             </h1>
 
             <p className="text-base sm:text-lg text-stone-300 leading-relaxed max-w-2xl font-normal">
-              Colaboro con empresas y profesionales para mejorar su gestión, coordinar personas, impulsar la atención al cliente y desarrollar nuevas oportunidades de negocio.
+              Experiencia en gestión documental, atención al cliente, actividad inmobiliaria, coordinación de proveedores, gestión de incidencias y organización de equipos.
             </p>
 
             {/* Brand Phrase Card in Glassmorphism */}
@@ -93,14 +73,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <ArrowDown className="w-4 h-4 text-stone-900" />
               </button>
 
-              <button
-                type="button"
-                onClick={onContactClick}
+              <a
+                href={PERSONAL_DATA.whatsappUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="px-7 py-4 rounded-xl text-xs sm:text-sm font-bold text-white bg-slate-900/90 hover:bg-slate-800/90 border border-white/15 hover:border-violet-400/50 shadow-md transition-all duration-200 flex items-center gap-2.5 cursor-pointer whitespace-nowrap shrink-0 hover:scale-[1.02]"
               >
-                <span>Hablemos de tu proyecto</span>
+                <span>Contactar</span>
                 <ArrowUpRight className="w-4 h-4 text-violet-300" />
-              </button>
+              </a>
             </div>
 
             {/* Trust points */}
@@ -166,21 +147,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
               </div>
 
-              {/* Floating Widget 1: coordinación operativa (Top-Right) */}
+              {/* Floating Widget 1 (Top-Right) */}
               <div className="absolute -top-4 -right-3 sm:-right-6 bg-slate-900/90 backdrop-blur-xl border border-violet-500/50 p-3 sm:p-3.5 rounded-xl shadow-2xl max-w-[200px] animate-float z-10">
                 <div className="flex items-center gap-2">
                   <Activity className="w-4 h-4 text-cyan-400" />
                   <span className="text-[10px] font-mono uppercase text-cyan-300 font-bold">Gestión y Negocio</span>
                 </div>
                 <div className="text-xs font-bold text-white mt-1">
-                  Coordinación de Operaciones
+                  RRHH y Selección
                 </div>
                 <div className="text-[10px] text-stone-300 mt-0.5">
-                  optimización y mejora de procesos
+                  organización y mejora de procesos
                 </div>
               </div>
 
-              {/* Floating Widget 2: Iniciativa Inmobiliaria (Bottom-Left) */}
+              {/* Floating Widget 2 (Bottom-Left) */}
               <div className="absolute -bottom-5 -left-3 sm:-left-6 bg-slate-900/95 backdrop-blur-xl border border-cyan-400/40 p-3 sm:p-3.5 rounded-xl shadow-2xl max-w-[220px] z-10">
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4 text-violet-400" />
@@ -200,32 +181,32 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Full-width 4-Column Proof & Metrics Strip with Tabular Figures */}
         <div className="mt-16 pt-10 border-t border-white/10 grid grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="p-4 rounded-xl glass-card border border-white/10 space-y-1">
-            <div className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
-              Orden que libera tiempo
+            <div className="text-2xl sm:text-3xl font-extrabold text-white font-mono tracking-tight">
+              Eficacia Directiva
             </div>
             <div className="text-xs sm:text-sm font-semibold text-stone-200">Enfoque resolutivo y metódico</div>
             <div className="text-xs text-stone-400">Procesos ágiles, sin rodeos y adaptados a cada empresa.</div>
           </div>
 
           <div className="p-4 rounded-xl glass-card border border-white/10 space-y-1">
-            <div className="text-xl sm:text-2xl font-extrabold text-gradient-electric tracking-tight">
-              Visión de negocio
+            <div className="text-2xl sm:text-3xl font-extrabold text-gradient-electric font-mono tabular-nums tracking-tight">
+              Sector Inmobiliario
             </div>
             <div className="text-xs sm:text-sm font-semibold text-stone-200">Dirección y gestión propia</div>
             <div className="text-xs text-stone-400">Operaciones, negociación y rigor documental.</div>
           </div>
 
           <div className="p-4 rounded-xl glass-card border border-white/10 space-y-1">
-            <div className="text-3xl sm:text-4xl font-extrabold text-cyan-400 tabular-nums tracking-tight">
-              4+
+            <div className="text-3xl sm:text-4xl font-extrabold text-cyan-400 font-mono tabular-nums tracking-tight">
+              4
             </div>
             <div className="text-xs sm:text-sm font-semibold text-stone-200">Áreas de soluciones clave</div>
             <div className="text-xs text-stone-400">Organización, Personas, Clientes y Desarrollo.</div>
           </div>
 
           <div className="p-4 rounded-xl glass-card border border-white/10 space-y-1">
-            <div className="text-3xl sm:text-4xl font-extrabold text-violet-300 tabular-nums tracking-tight">
-              1:1
+            <div className="text-3xl sm:text-4xl font-extrabold text-violet-400 font-mono tabular-nums tracking-tight">
+              100%
             </div>
             <div className="text-xs sm:text-sm font-semibold text-stone-200">Dedicación independiente</div>
             <div className="text-xs text-stone-400">Orientada al avance ágil de cada negocio.</div>
