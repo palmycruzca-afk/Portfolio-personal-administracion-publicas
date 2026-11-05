@@ -247,20 +247,6 @@ export const PROJECTS_DATA = [
     imageKey: 'eria_house_project'
   },
   {
-    id: 'palmira-ai-lab',
-    title: 'PALMIRA AI',
-    subtitle: 'Plataforma Inteligente de Prospección y Gestión de Oportunidades',
-    tag: 'Iniciativa Tecnológica',
-    period: '2026',
-    description: 'Sistema privado de inteligencia empresarial diseñado para detectar oportunidades de externalización de servicios, colaboraciones y ofertas administrativas en Toledo, La Sagra y la zona sur de Madrid, evaluando cada oportunidad con una fórmula matemática multicriterio transparente.',
-    highlights: [
-      'Motor de prospección con ponderación multicriterio objetiva (Índice 0-100).',
-      'Generador de propuestas comerciales y presupuestos asistido por inteligencia artificial.',
-      'Sistema de gestión comercial para un seguimiento riguroso y humano.'
-    ],
-    imageKey: 'palmira_ai_concept'
-  },
-  {
     id: 'optimizacion-pymes',
     title: 'Protocolos de Estandarización para Pequeños Negocios',
     subtitle: 'Metodología Operativa para Pymes y Comercios',

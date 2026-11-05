@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { Sparkles, Menu, X, ArrowUpRight } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 
 interface PublicNavbarProps {
-  onOpenAi: () => void;
   onContactClick: () => void;
 }
 
-export const PublicNavbar: React.FC<PublicNavbarProps> = ({ onOpenAi, onContactClick }) => {
+export const PublicNavbar: React.FC<PublicNavbarProps> = ({ onContactClick }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -21,7 +20,7 @@ export const PublicNavbar: React.FC<PublicNavbarProps> = ({ onOpenAi, onContactC
           <span>PALMIRA CRUZ</span>
         </a>
 
-        {/* Zone 2: 4–5 concise links */}
+        {/* Zone 2: Navigation Links */}
         <nav className="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-stone-300">
           <a href="#sobre-mi" className="hover:text-white hover:text-violet-300 transition-colors whitespace-nowrap shrink-0">
             Sobre mí
@@ -40,21 +39,8 @@ export const PublicNavbar: React.FC<PublicNavbarProps> = ({ onOpenAi, onContactC
           </a>
         </nav>
 
-        {/* Zone 3: Primary Action & Palmira AI Link */}
+        {/* Zone 3: Primary Action */}
         <div className="flex items-center gap-3 shrink-0">
-          <button
-            type="button"
-            onClick={onOpenAi}
-            className="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-xl bg-violet-950/60 hover:bg-violet-900/70 text-violet-200 border border-violet-700/50 hover:border-violet-500 transition-all cursor-pointer shadow-sm hover:shadow-violet-900/40"
-            title="Abrir plataforma de inteligencia de negocio"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-violet-400 animate-pulse" />
-            <span>Palmira AI</span>
-            <span className="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded bg-violet-800/80 text-violet-100 border border-violet-600/40">
-              Privado
-            </span>
-          </button>
-
           <button
             type="button"
             onClick={onContactClick}
@@ -85,20 +71,6 @@ export const PublicNavbar: React.FC<PublicNavbarProps> = ({ onOpenAi, onContactC
             <a href="#servicios" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-white">Servicios</a>
             <a href="#proyectos" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-white">Proyectos</a>
             <a href="#contacto" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-white">Contacto</a>
-          </div>
-
-          <div className="pt-4 border-t border-stone-800">
-            <button
-              type="button"
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenAi();
-              }}
-              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-semibold text-xs tracking-wide uppercase"
-            >
-              <Sparkles className="w-4 h-4 text-violet-200" />
-              <span>Acceder a Palmira AI</span>
-            </button>
           </div>
         </div>
       )}
